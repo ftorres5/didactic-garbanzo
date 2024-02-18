@@ -1,0 +1,4 @@
+node_modules
+# Keep environment variables out of version control
+#.env
+# I commented this out so you can see the .env example

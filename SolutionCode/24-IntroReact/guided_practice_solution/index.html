@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Block 24: Guided Practice</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        function MyApp() {
+            return <h1>Hello, world!</h1>;
+        }
+
+        function Profile() {
+            return (<article>
+                <section className="flexContainer">
+                    <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWFuJTIwY29tcHV0ZXIlMjBlbmdpbmVlcnxlbnwwfHwwfHx8Mg%3D%3D" />
+                    <div>
+                        <h2>Adam Horwitz</h2>
+                        <p>Software Engineer</p>
+                    </div>
+                </section>
+                <section>
+                    <h3>Information</h3>
+                    <div className="flexContainer">
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@example.com</p>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>123 456 7890</p>
+                        </div>
+                    </div>
+                </section>
+            </article>)
+        }
+
+        const container = document.getElementById('root');
+        const root = ReactDOM.createRoot(container);
+        root.render(<Profile />);
+
+    </script>
+    <!--
+      Note: this page is a great way to try React but it's not suitable for production.
+      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+      Read this page for starting a new React project with JSX:
+      https://react.dev/learn/start-a-new-react-project
+
+      Read this page for adding React with JSX to an existing project:
+      https://react.dev/learn/add-react-to-an-existing-project
+    -->
+</body>
+
+</html>

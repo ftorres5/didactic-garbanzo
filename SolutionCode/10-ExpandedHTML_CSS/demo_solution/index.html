@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block 10: Expanded CSS and HTML</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <header>
+        <h1>HTML Forms and Expanded CSS</h1>
+    </header>
+
+    <article>
+        <section class="grid_header_one">
+            <h2>Simple form</h2>
+            <!-- 👉 STEP 1 Add a form  -->
+            <!-- 👉 STEP 2 Add an action to the form so that when the form is submitted it navigates to the `submission.html` file  -->
+            <form action="./submission.html">
+                <!-- 👉 STEP 4 Add labels and text inputs to capture: First name and Last name  -->
+                <!-- for attribute specifies which form element it is bound to
+                the for should equal the input's id -->
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" />
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" />
+
+                <!-- 👉 STEP 3 Add a submit input type with a class of submit_btn  -->
+                <input class="submit_btn" type="submit" value="Submit" />
+            </form>
+        </section>
+
+        <section class="grid_header_two">
+            <h2>Form for cell phone, email and password</h2>
+            <!-- 👉 STEP 1 Add a form  -->
+            <!-- 👉 STEP 2 Add an action to the form so that when the form is submitted it navigates to the `submission.html` file  -->
+            <form action="./submission.html">
+                <!-- 👉 STEP 5 Add labels to capture: Cell Number, Email and Password (8 characters minimum) -->
+                <!-- 👉 STEP 6 Add an the following input types associated with the correct label: email, password, number -->
+                <label for="cellNumber">Cell Number</label>
+                <input type="number" id="cellNumber" name="cellNumber" />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" />
+                <label for="password">Password (8 characters minimum):</label>
+                <input type="password" id="password" name="password" />
+
+                <!-- 👉 STEP 3 Add a submit input type with a class of submit_btn  -->
+                <input class="submit_btn" type="submit" value="Submit" />
+            </form>
+        </section>
+
+        <section class="grid_header_three">
+            <h2>Radio button - what is your favorite so far:</h2>
+            <!-- 👉 STEP 1 Add a form  -->
+            <!-- 👉 STEP 2 Add an action to the form so that when the form is submitted it navigates to the `submission.html` file  -->
+            <form action="./submission.html">
+                <!-- 👉 STEP 7 Add labels and radio inputs to capture a favorite language 
+                                NOTE: The inputs will need to be inside the label tags
+                            -->
+                <label for="html">
+                    <!-- 👉 STEP 8 Add a value attribute for each radio input -->
+                    <input type="radio" id="html" name="fav_language" value="HTML" />
+                    HTML
+                </label>
+                <label for="css">
+                    <input type="radio" id="css" name="fav_language" value="CSS" />
+                    CSS
+                </label>
+                <label for="javascript">
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
+                    Javascript
+                </label>
+                <!-- 👉 STEP 3 Add a submit input type with a class of submit_btn  -->
+                <input class="submit_btn" type="submit" value="Submit" />
+            </form>
+        </section>
+
+        <section class="grid_menu">
+            <h2 class="checkbox_color">Checkbox:</h2>
+            <!-- 👉 STEP 1 Add a form  -->
+            <!-- 👉 STEP 2 Add an action to the form so that when the form is submitted it navigates to the `submission.html` file  -->
+            <form action="./submission.html">
+                <!-- 👉 STEP 9 Add labels and checkbox inputs to capture a vehicle
+                                NOTE: The inputs will need to be inside the label tags
+                            -->
+                <label for="vehicle1">
+                    <!-- 👉 STEP 10 Add a value attribute for each checkbox input -->
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+                    I have a bike
+                </label>
+                <label for="vehicle2">
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+                    I have a car
+                </label>
+                <label for="vehicle3">
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+                    I have a boat
+                </label>
+                <!-- 👉 STEP 3 Add a submit input type with a class of submit_btn  -->
+                <input class="submit_btn" type="submit" value="Submit" />
+
+            </form>
+
+        </section>
+
+        <section class="grid_main_five">
+            <h2>Date:</h2>
+            <!-- 👉 STEP 1 Add a form  -->
+            <!-- 👉 STEP 2 Add an action to the form so that when the form is submitted it navigates to the `submission.html` file  -->
+            <form action="./submission.html">
+                <!-- 👉 STEP 11 Add a label and date input to capture the start date -->
+                <label for="start">Start date:</label>
+                <!-- 👉 STEP 12 Add the attributes value, min and max to the date input -->
+                <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+                <!-- 👉 STEP 3 Add a submit input type with a class of submit_btn  -->
+                <input class="submit_btn" type="submit" value="Submit" />
+            </form>
+        </section>
+
+        <section class="grid_main_six">
+            <h2>Text Area:</h2>
+            <!-- 👉 STEP 1 Add a form and add a class of flex_form to this form  -->
+            <!-- 👉 STEP 2 Add an action to the form so that when the form is submitted it navigates to the `submission.html` file  -->
+            <form class="flex_form" action="./submission.html">
+                <!-- 👉 STEP 13 Add a label and textarea input to capture a review -->
+                <label for="w3review">Review:</label>
+                <!-- 👉 STEP 14 Add a class of flex_input to the textarea input -->
+                <!-- 👉 STEP 15 Add the attributes rows and cols to the textarea input -->
+                <textarea class="flex_input" id="w3review" name="w3review" rows="4" cols="50"> </textarea>
+
+                <!-- 👉 STEP 3 Add a submit input type with a class of flex_submit  -->
+                <input class="flex_submit" type="submit" value="Submit" />
+            </form>
+        </section>
+
+        <section class="grid_footer">
+            <h2>Animals:</h2>
+            <!-- 👉 STEP 1 Add a form  -->
+            <!-- 👉 STEP 2 Add an action to the form so that when the form is submitted it navigates to the `submission.html` file  -->
+            <form action="./submission.html">
+                <!-- 👉 STEP 16 Add a label and select input type to pick a pet -->
+                <label for="pet-select">Choose a pet:</label>
+
+                <select name="pets" id="pet-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="parrot">Parrot</option>
+                    <option value="spider">Spider</option>
+                    <option value="goldfish">Goldfish</option>
+                </select>
+                <!-- 👉 STEP 3 Add a submit input type with a class of submit_btn  -->
+                <input class="submit_btn" type="submit" value="Submit" />
+            </form>
+        </section>
+    </article>
+</body>
+
+</html>

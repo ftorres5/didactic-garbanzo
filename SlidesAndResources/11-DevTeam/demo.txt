@@ -1,0 +1,65 @@
+Creating Github Repository
+
+1. From Github
+  a. Click on profile picture on top right
+  b. Click your repositories
+  c. Click green "New" button
+  d. Choose yourself as an owner
+  e. Give repository a name
+  f. Optionally, give a description
+  g. Check add a README file
+  h. Click green "Create repository" button
+  i. Click green "Code" button and select ssh clone option
+  j. In terminal, make sure you're in the directory where you want this repository to live
+  k. Enter command git clone <ssh url copied from github>
+  l. cd into new directory
+  m. Make changes
+   - git add .
+   - git commit -m "message"
+   - ....rinse repeat
+   - git push
+   - ....rinse repeat
+
+2. From command line
+  a. Click on profile picture on top right
+  b. Click your repositories
+  c. Click green "New" button
+  d. Choose yourself as an owner
+  e. Give repository a name
+  f. Optionally, give a description
+  g. Leave add a README file unchecked
+  h. Create empty directory locally (folder) and cd into into
+  i. Follow steps in "...or creatae a new repository on the command line" option
+  j. Note that the echo command just creates a readme file from the terminal- you can do this in the vs code gui if you'd like
+  k. If you add more files than the readme, make sure to add them to the staging area as well and push them
+  l. Make more changes
+   - git add .
+   - git commit -m "message"
+   - ....rinse repeat
+   - git push
+   - ....rinse repeat
+
+Branching and merge conflicts
+
+1. git checkout main
+2. git pull (make sure you're up to date with main)
+3. git checkout -b <your branch name> (create and checkout a new branch)
+4. Make changes
+   - git add .
+   - git commit -m "message"
+   - ....rinse repeat
+   - git push
+   - ....rinse repeat
+5. Go to github and create a pull request (click the create pull request button... may have to navigate to the "branches" page to create your pull request)
+  - Note... before you do this, you'll likely want to git checkout main, git pull, git checkout <your branch name>, git merge main
+6. If there are no merge conflicts, click merge, then locally:
+  - git checkout main
+  - git pull
+  - Then you can create a new branch for further feature development and go through the same process from step 3 above
+7. If there are merge conflicts
+  - In github, resolve in the UI
+  - Not in github, resolve in vs code:
+    - resolve conflicts by using the UI to accept incoming change, current change or both changes
+    - git add .
+    - git commit -m "resolve merge conflicts"
+    - git push (then you should be able to create a new pull request with no conflicts in github!)

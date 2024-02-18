@@ -1,0 +1,15 @@
+{
+  "name": "guided_practice_solution",
+  "version": "1.0.0",
+  "description": "Using what we have learned about Node.js and Express.js:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

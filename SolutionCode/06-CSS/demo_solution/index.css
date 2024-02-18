@@ -1,0 +1,76 @@
+/* 👉 STEP 6: Add a background color of cornsilk to the entire page */
+html {
+  background-color: cornsilk;
+}
+
+/* 👉 STEP 7: Add a left margin to the article of 25% */
+article {
+  margin-left: 25%;
+}
+
+/* 
+    👉 STEP 8 : Add the following styles to the header
+      * text color has a hex value of `#360568`
+      * the text is center aligned 
+      * the text is uppercase without changing the HTML file
+      * add an underline 
+  */
+header {
+  color: #360568;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+/* 👉 STEP 9: All h2 tags have a color with a hex value of `#5B2A86` */
+h2 {
+  color: #5b2a86;
+}
+
+/* 👉 STEP 10: Set the first paragraph to have a width that is half the size of the view-width. Making sure to select it via the class name made in step 3 */
+.intro-paragraph {
+  width: 50vw;
+}
+
+/* 👉 STEP 11: Change the list item text color to dark green */
+li {
+  color: darkgreen;
+}
+
+/* 👉 STEP 14: Add a black solid border around the image with an id of centerPuppy (madde in step 7) */
+#firstPuppy {
+  border: solid black 1px;
+}
+
+/* 👉 STEP 15: Add a right margin of 150px, a top margin of 24px, a width and height of 300px to all the puppy images   */
+.puppies {
+  width: 300px;
+  height: 300px;
+  /* margin-right: 150px;
+    margin-top: 24px; */
+  /* shorthand version fo the margin above */
+  margin: 24px 150px 0 0;
+}
+
+/* 👉 STEP 16: Add a border-with of 2px and a width of 100% to the table (made in step 5) */
+table {
+  border-width: 2px;
+  width: 80%;
+}
+
+/* 👉 STEP 17: Left align the text within the table and add a padding of 8px */
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+/* 👉 STEP 18: Make the background color of all even rows darkgray*/
+tr:nth-child(even) {
+  background-color: darkgray;
+}
+
+/* 👉 STEP 19: Make the background color of all odd rows bisque*/
+tr:nth-child(odd) {
+  background-color: bisque;
+}
